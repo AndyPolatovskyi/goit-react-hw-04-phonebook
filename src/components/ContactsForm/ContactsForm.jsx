@@ -129,7 +129,7 @@ export function ContactsForm({ onSubmit }) {
 
 ContactsForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  contacts: PropTypes.object.isRequired,
+  contacts: PropTypes.array.isRequired,
 };
 
 export default ContactsForm;

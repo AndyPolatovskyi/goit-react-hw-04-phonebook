@@ -1,7 +1,7 @@
 // import React, { Component } from 'react';
 import { useState, useEffect } from 'react';
 import shortid from 'shortid';
-import contacts from '../components/data/contacts.json';
+import fileContacts from '../components/data/fileContacts.json';
 import ContactsForm from './ContactsForm/ContactsForm';
 import ContactsList from './ContactsList/ContactsList';
 import Filter from './Filter/Filter';
@@ -9,7 +9,7 @@ import css from './App.module.css';
  
 
   export function App () {
-    const [contacts, setContacts] = useState([]);
+    const [contacts, setContacts] = useState(fileContacts);
     const [filter, setFilter] = useState('');
     const [localSt, setLocalSt] = useState(true);
 
