@@ -28,7 +28,7 @@ import css from './App.module.css';
         return
       }
       localStorage.setItem('contacts', JSON.stringify(contacts));
-    }, [contacts]);
+    }, [contacts,localSt]);
 
 
 // export class App extends Component {
